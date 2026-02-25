@@ -8,7 +8,7 @@ export function isCapitalized(word){
     return word[0] === word[0]?.toUpperCase();
 }
 
-export function checkSpelling(word) {
+export function checkSpelling(text, dictionary) {
     const misspelled=[]
 
     const words=text.split(" ");
