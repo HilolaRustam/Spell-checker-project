@@ -23,6 +23,7 @@ body {
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
+    background-color: rgb(199, 235, 223);
   }
 
   #results p {
@@ -40,6 +41,6 @@ body {
     font-size: 14px;
   }
   .misspelled {
-  color: red;
+  color: rgb(223, 137, 137);
   font-weight: bold;
 }

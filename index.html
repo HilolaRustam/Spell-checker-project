@@ -4,19 +4,25 @@
     <meta charset="Utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Basic English spell checker</title>
+     <meta 
+    name="description" 
+    content="A simple web-based English spell checker that highlights misspelled words and allows users to add them to a custom dictionary."
+  />
     <link rel="stylesheet" href="./style.css" />
  </head>   
  <body>
+    <main>
     <h1>Basic English spell checker</h1>
-    <label for="text-input">Enter text:</label>
+    <label for="text-input">Enter text please:</label>
     <textarea 
     id="text-input"
     rows="6"
-    calm="50"
+    calm="50" placeholder="Type here ..."
     ></textarea>
     <br/>
     <button id="check-button" type="button">Check Spelling</button>
     <div id="results" aria-live="polite"></div>
+    </main>
     <script type="module" src="./main.mjs"></script>
  </body>
 </html>
