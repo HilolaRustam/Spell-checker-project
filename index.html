@@ -1,69 +1,29 @@
-<!DOCTYPE html> 
+<!doctype html>
 <html lang="en">
- <head> 
-    <meta charset="Utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic English spell checker</title>
-    <style>
-  body {
-    font-family: Arial, sans-serif;
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 0 15px;
-    line-height: 1.5;
-  }
-
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  #results p {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-
-  #results div {
-    margin-top: 5px;
-  }
-
-  #results button {
-    margin-left: 10px;
-    padding: 2px 6px;
-    font-size: 14px;
-  }
-  .misspelled {
-  color: red;
-  font-weight: bold;
-}
-</style>
-
- </head>   
- <body>
-    <h1>Basic English spell checker</h1>
-    <label for="text-imput">Enter text:</label>
-    <textarea 
-    id="text-imput"
-    rows="6"
-    calm="50"
-    ></textarea>
-    <br/>
-    <button id="check-button" type="button">Check Spelling</button>
-    <div id="results" aria-live="polite"></div>
-    <script type="module" scr="./main.js"></script>
- </body>
+    <meta
+      name="description"
+      content="A simple web-based English spell checker that highlights misspelled words and allows users to add them to a custom dictionary."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Basic English spell checker</h1>
+      <label for="text-input">Enter text please:</label>
+      <textarea
+        id="text-input"
+        rows="6"
+        calm="50"
+        placeholder="Type here ..."
+      ></textarea>
+      <br />
+      <button id="check-button" type="button">Check Spelling</button>
+      <div id="results" aria-live="polite"></div>
+    </main>
+    <script type="module" src="./main.mjs"></script>
+  </body>
 </html>
