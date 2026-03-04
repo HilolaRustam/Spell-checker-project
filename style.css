@@ -44,3 +44,7 @@ body {
   color: rgb(225, 15, 15);
   font-weight: bold;
 }
+  .correct {
+    color:rgb(13, 210, 13);
+    font-weight: bold;
+  }
