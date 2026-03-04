@@ -11,7 +11,7 @@ export function isCapitalized(word) {
 export function checkSpelling(text, dictionary) {
   const misspelled = [];
 
-  const words = text.split(" ");
+  const words = text.split(/\s+/);
 
   for (let word of words) {
     if (!word) continue;

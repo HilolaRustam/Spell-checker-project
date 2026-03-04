@@ -25,6 +25,7 @@ checkButton.addEventListener("click", () => {
     // Loops through each misspelled word to display it on the page.
     const wordDiv = document.createElement("div"); // creates a new <div> element in the browser for each misspelled word.
     wordDiv.textContent = `Misspelled word: ${word}`; //Adds text inside the newly created <div> to show the misspelled word.
+    wordDiv.setAttribute("role", "alert");
     wordDiv.classList.add("misspelled");
     const addButton = document.createElement("button"); //Creates a new button element in memory for the user to add the misspelled word to the dictionary.
     addButton.textContent = "Add to dictionary";
