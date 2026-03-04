@@ -17,8 +17,12 @@ checkButton.addEventListener("click", () => {
   const text = textInput.value;
   const mistakes = checkSpelling(text, words);
   resultsDiv.innerHTML = ""; //Clears any previous spelling results from the page.
-  if (mistakes.length === 0) {
-    // Checks if there are no misspelled words.
+  if (mistakes.length === 0) { // Checks if there are no misspelled words.
+   const noMisspelled = document.createElement("div");
+   noMisspelled.textContent = ("No misspelled word found");
+   noMisspelled.setAttribute("role","alert");
+   noMisspelled.classList.add("correct");
+   resultsDiv.appendChild(noMisspelled);
     return;
   }
   mistakes.forEach((word) => {
